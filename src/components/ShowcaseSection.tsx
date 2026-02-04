@@ -13,7 +13,13 @@ const ShowcaseSection: React.FC = () => {
 
                 <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                     {PORTFOLIO.map((item, i) => (
-                        <div key={i} className="group relative tech-card cursor-pointer aspect-[4/3] group-hover:border-emerald-500/30 transition-colors">
+                        <a
+                            key={i}
+                            href={item.link || '#'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group relative tech-card cursor-pointer aspect-[4/3] group-hover:border-emerald-500/30 transition-colors block"
+                        >
                             <img
                                 src={item.image}
                                 className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
@@ -24,7 +30,7 @@ const ShowcaseSection: React.FC = () => {
                                 <h3 className="text-2xl font-bold text-white uppercase font-mono">{item.title}</h3>
                                 <div className="h-[1px] w-full bg-white/10 mt-4 group-hover:bg-emerald-500/50 transition-colors"></div>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
             </div>

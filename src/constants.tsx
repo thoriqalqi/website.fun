@@ -2,7 +2,7 @@
 import React from 'react';
 import { Layout, Shield, Zap, Cpu, Globe, Rocket } from 'lucide-react';
 
-export const WHATSAPP_LINK = "https://wa.me/6281234567890?text=Halo%20website.fun,%20saya%20ingin%20konsultasi%20mengenai%20pembuatan%20website.";
+export const WHATSAPP_LINK = "https://wa.me/6285788916278?text=Halo%20website.fun,%20saya%20ingin%20konsultasi%20mengenai%20pembuatan%20website.";
 
 export const NAV_LINKS = [
   { label: 'Masalah', href: '#problem' },
@@ -78,13 +78,15 @@ export const WHY_US = [
 
 export const PORTFOLIO = [
   {
-    title: "Coffee Shop Millennial",
-    category: "UMKM / Landing Page",
-    image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=600&h=400"
+    title: "Resik Laundry",
+    category: "UMKM / Laundry",
+    image: "/laundry.png",
+    link: "https://laundry-profile.vercel.app/"
   },
   {
-    title: "Tech Logistic Solutions",
+    title: "Lumina Sinergi",
     category: "Company Profile",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=600&h=400"
+    image: "/lumina.png",
+    link: "https://company-profile-theta-kohl.vercel.app/"
   }
 ];
