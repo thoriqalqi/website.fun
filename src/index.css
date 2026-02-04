@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sage-glow: rgba(16, 185, 129, 0.15);
+  --sage-primary: #10b981;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  scroll-behavior: smooth;
+  @apply bg-[#18181b] text-[#fdfefb] transition-colors duration-500 selection:bg-emerald-500/30 selection:text-emerald-400;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.gradient-text {
+  @apply text-white;
+}
+
+/* Sharp Glass - More solid, technical look */
+.glass {
+  @apply bg-[#27272a]/80 backdrop-blur-md border border-white/5;
+}
+
+.glass-hover {
+  @apply hover:border-emerald-500/30 hover:bg-[#27272a] transition-all duration-300;
+}
+
+/* Technical Card - Minimal rounded, border heavy */
+.tech-card {
+  @apply bg-[#27272a] border border-white/5 relative overflow-hidden;
+}
+
+.tech-border {
+  @apply border border-white/10;
+}
+
+.glow-card:hover {
+  box-shadow: 0 0 0 1px var(--sage-primary), 0 0 20px var(--sage-glow);
+  border-color: var(--sage-primary);
+}
+
+.bento-grid {
+  @apply grid grid-cols-12 gap-4;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #18181b;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-emerald-600 rounded-full;
+}
+
+/* Hero Animation - Subtler, narrower */
+.orbit-container {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] pointer-events-none;
+}
+
+.orbit-circle {
+  @apply absolute border border-white/5 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}

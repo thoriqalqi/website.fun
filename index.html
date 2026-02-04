@@ -1,97 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website.fun - Jarvis-Style AI Web Agency</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --sage-glow: rgba(16, 185, 129, 0.3);
-            --sage-primary: #10b981;
-        }
-        body {
-            font-family: 'Plus+Jakarta+Sans', sans-serif;
-            scroll-behavior: smooth;
-            transition: background-color 0.4s ease, color 0.4s ease;
-            overflow-x: hidden;
-        }
-        .font-mono { font-family: 'JetBrains+Mono', monospace; }
-        
-        .gradient-text {
-            background: linear-gradient(135deg, #10b981, #d1fae5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .glass {
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(16, 185, 129, 0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .dark .glass {
-            background: rgba(15, 23, 42, 0.6);
-        }
-        
-        .light .glass {
-            background: rgba(255, 255, 255, 0.6);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-        }
-
-        .glow-card:hover {
-            box-shadow: 0 0 30px var(--sage-glow);
-            border-color: var(--sage-primary);
-        }
-
-        .bento-grid {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 1.5rem;
-        }
-
-        /* Hero Animation */
-        .orbit-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 600px;
-            height: 600px;
-            pointer-events: none;
-        }
-        .orbit-circle {
-            position: absolute;
-            border: 1px solid rgba(16, 185, 129, 0.1);
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .grid-bg {
-            background-image: 
-                linear-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
-            background-size: 40px 40px;
-        }
-    </style>
-<script type="importmap">
-{
-  "imports": {
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
-  }
-}
-</script>
 </head>
-<body class="dark">
+<body class="dark bg-gray-950 text-white">
     <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
 </body>
 </html>
